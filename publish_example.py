@@ -53,6 +53,6 @@ client.on_connect = on_connect
 client.on_message = on_message
 
 # Finally, connect to the server:
-client.connect("my.farmbot.io", 1883, 60)
+client.connect("brisk-bear.rmq.cloudamqp.com", 1883, 60)
 print("Here we go...")
 client.loop_forever()
