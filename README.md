@@ -14,3 +14,16 @@
     this to login to the MQTT server.
  * `subscribe_example.py` - Learn how to _listen_ to incoming data. Running this script is a great way to observe real world commands used by the Web App.
  * `publish_example.py` - Learn how to _send_ CeleryScript RPC nodes to the device.
+
+# How Does It Work?
+
+ * FarmBot uses [JSON Web Tokens (JWTs)](https://jwt.io) for authorization.
+ * JWTs can contain "claims". A claim is just data encoded inside a token.
+ * The `"mqtt"` claim in a FarmBot JWT is important because it tells you which MQTT server your account must use.
+ * Currently, all users are routed to `brisk-bear.rmq.cloudamqp.com` as their MQTT server, but this may change in the future without notice.
+ * It is a best practice to not hardcode the MQTT server URL and instead extract the URL from the Token.
+ * This will prevent your application from losing connectivity if the MQTT server changes in the future.
+
+An example of extracting the MQTT server hostname from a token can be found [here](https://github.com/FarmBot-Labs/FarmBot-Python-Examples/blob/master/token_generation_example.py#L22).
+
+Read more about FarmBot API tokens [here](https://github.com/FarmBot/Farmbot-Web-App#q-how-can-i-generate-an-api-token).
