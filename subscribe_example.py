@@ -47,6 +47,6 @@ client.on_connect = on_connect
 client.on_message = on_message
 
 # Finally, connect to the server:
-client.connect("brisk-bear.rmq.cloudamqp.com", 1883, 60)
+client.connect("clever-octopus.rmq.cloudamqp.com", 1883, 60)
 
 client.loop_forever()

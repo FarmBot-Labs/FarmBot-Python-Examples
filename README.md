@@ -20,7 +20,7 @@
  * FarmBot uses [JSON Web Tokens (JWTs)](https://jwt.io) for authorization.
  * JWTs can contain "claims". A claim is just data encoded inside a token.
  * The `"mqtt"` claim in a FarmBot JWT is important because it tells you which MQTT server your account must use.
- * Currently, all users are routed to `brisk-bear.rmq.cloudamqp.com` as their MQTT server, but this may change in the future without notice.
+ * Currently, all users are routed to `clever-octopus.rmq.cloudamqp.com` as their MQTT server, but this may change in the future without notice.
  * It is a best practice to not hardcode the MQTT server URL and instead extract the URL from the Token.
  * This will prevent your application from losing connectivity if the MQTT server changes in the future.
 

@@ -3,7 +3,7 @@ import paho.mqtt.publish as publish
 
 # Generate this information by using `token_generation_example.py`.
 my_device_id = 'device_1'
-my_mqtt_host = 'brisk-bear.rmq.cloudamqp.com'
+my_mqtt_host = 'clever-octopus.rmq.cloudamqp.com'
 my_token = ''
 
 # Prepare the Celery Script command.
