@@ -1,3 +1,11 @@
+# You Might Not Need This
+
+These examples are old.
+
+FarmBot now offers a [Python library](https://github.com/FarmBot/farmbot-py) to handle low level MQTT management.
+
+Consider using the Python library instead.
+
 # Control FarmBot with Python
 
 # Up and Running
